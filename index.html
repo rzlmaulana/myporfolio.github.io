@@ -19,7 +19,7 @@
    <!-- Navbar -->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
     <div class="container-fluid">
-      <img src="img/log4.jpg" alt="" width="50" height="30" class="d-inline-block align-top"> <a class="navbar-brand" href="#">  Muhamad Rizal Maulana</a>
+      <a class="navbar-brand text-info" href="#">Muhamad Rizal Maulana</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,19 +44,22 @@
   </nav>
    <!-- akhir Navbar -->
    <!-- jumbotron -->
-   <section class="jumbotron text-center text-white">
-       <img src="img/potpo.jpg" alt="Muhamad Rizal Maulana" width="200" class="rounded-circle img-thumbnail">
-    <h1 class="display-4">Muhamad Rizal Maulana</h1>
-    <p class="lead">Web Develover | Web Design | Graphic Design</p>
-    <p><i class="bi bi-instagram"> @Izulmuhamad</i> | <i class="bi-twitter"> @Izalmuhamad</i> </p>
-    <p><i class="bi bi-envelope-fill"></i> Muhrimaul96@gmail.com </p>
+   <section class="jumbotron text-center text-white ">
+       <img src="img/IMG-20201019-WA0000.jpg" alt="Muhamad Rizal Maulana" width="200" class="rounded-circle img-thumbnail">
+    <h1 class="display-4 text-info">Muhamad Rizal Maulana</h1>
+    <p class="lead"> Freelancer Web Develover | UI/UX Designer | Graphic Design</p>
+    <p>
+      <a href="http://instagram.com/izulmuhamad"><i class="bi bi-instagram p-2 "></i></a>
+      <a href="http://twitter.com/izalmuhamad"><i class="bi-twitter p-2"></i></a>
+      <a href="mailto:muhrimaul96@gmail.com"><i class="bi bi-envelope-fill p-2"></i></a> 
+    </p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f1010" fill-opacity="1" d="M0,224L40,197.3C80,171,160,117,240,122.7C320,128,400,192,480,197.3C560,203,640,149,720,154.7C800,160,880,224,960,224C1040,224,1120,160,1200,133.3C1280,107,1360,117,1400,122.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     </section>
    <!-- akhirjumbotron -->
    <!-- About -->
 <section id="About">
     <div class="container">
-    <div class="row text-center text-white">
+    <div class="row text-center text-info">
     <div class="col">
         <H2>About Me </H2>
         </div>
@@ -82,7 +85,7 @@
 <!-- projects -->
 <section id="projects" ;>
     <div class="container">
-        <div class="row text-center text-white mb-3">
+        <div class="row text-center text-info mb-3">
             <div class="col">
                 <h2>My Projects</h2>
             </div>
@@ -144,29 +147,41 @@
 <!-- contact -->
 <section id="contact">
     <div class="container">
-        <div class="row text-center text-white mb-3">
-            <div class="col">
-                <h2>Contact Me</h2>
+        <div class="row justify-content-center text-center text-white">
+            <div class="col-md-3">
+                <h2 class="text-info">Contact Me</h2>
+                <p><i class="bi bi-whatsapp">+62 895-8097-22266</i></p>
+                <p><i class="bi bi-envelope"></i> muhrimaul96@gmail.com</p>
+                <p><i class="bi bi-geo-alt"></i>Bandung, West Java ,Indonesia</p>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form>
-                    <div class="mb-3 text-white">
-                      <label for="name" class="form-label">Nama Lengkap</label>
-                      <input type="text" class="form-control" id="name" aria-describedby="name">
-                    <div class="mb-3">
+            <div class="col-md-3">
+              <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                  <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <form name="rzl-maulana-contact-form">
+                    <div class="mb-2 text-white">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
+                    <div class="mb-2">
                       <label for="email" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="email" aria-describedby="email">
+                      <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
                     </div>
                     <div class="mb-3">
-                        <label for="pesan" class="form-label">Pesan</label>
-                        <textarea class="form-control" id="pesan" rows="3"></textarea>
+                        <label for="pesan" class="form-label">Message</label>
+                        <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                       </div>
                       </div>
-                      
-                    <button type="submit" class="btn btn-primary">Kirim</button>
+                      <div class="d-grid gap-2">
+                    <button type="submit" class="btn-lg btn-info btn-kirim text-white"><i class="bi bi-cursor-fill"></i> Send</button>
+                    <button class="btn btn-info btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
                   </form>
+                </div>
             </div>
         </div>
     </div>
@@ -174,7 +189,7 @@
 </section>
 <!-- akhir contact -->
 <!-- footer -->
-<footer class="bg-dark text-white text-center pb-2">
+<footer class="bg-dark text-info text-center pb-2">
   <p>&copy 2021 | built by Muhamad Rizal Maulana. </p>
   
 </footer>
@@ -183,5 +198,35 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxkutnd5aF-65tGgDYLcvq0Q0-TzjHwNuUzY1yWXEiUtwsl4f7wqBE8XmkwtVcfObL5kQ/exec';
+  const form = document.forms['rzl-maulana-contact-form'];
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const myAlert = document.querySelector ('.my-alert');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // ketika  tombol submit diklik
+    // tampilkan tombol loading , hilangkan tombol  kirim
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle ('d-none');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        // tampilkan tombol kirim , hilangkan tombol  loading
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle ('d-none');
+        // tampilkan alert
+        myAlert.classList.toggle('d-none');
+        // reset form
+        form.reset();
+
+        console.log('Success!', response);
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
   </body>
 </html>
